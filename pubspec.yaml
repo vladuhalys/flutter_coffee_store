@@ -1,0 +1,32 @@
+name: flutter_coffee_store
+description: A new Flutter project.
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.1.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  get: ^4.6.5
+  flutter_svg: ^2.0.7
+  google_fonts: ^5.1.0
+  dropdown_button2: ^2.3.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/back/back_intro.png
+    - assets/icons/Home.svg
+    - assets/icons/Heart.svg
+    - assets/icons/Bag.svg
+    - assets/icons/Notification.svg
+    - assets/icons/Search.svg
+    - assets/icons/Settings.svg
+    - assets/img/CardBanner.jpg
