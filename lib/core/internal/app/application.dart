@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_coffee_store/core/internal/util/bindings.dart';
 import 'package:flutter_coffee_store/core/presentation/screens/detail_screen/presentation/detail_screen.dart';
 import 'package:flutter_coffee_store/core/presentation/screens/home_screen/presentation/home_screen.dart';
 import 'package:flutter_coffee_store/core/presentation/screens/intro_screen/presentation/intro_screen.dart';
@@ -10,6 +11,8 @@ class Application extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+        title: 'Coffee Store',
+        initialBinding: GetXBindings(),
         debugShowCheckedModeBanner: false,
         initialRoute: '/intro',
         locale: Get.deviceLocale,

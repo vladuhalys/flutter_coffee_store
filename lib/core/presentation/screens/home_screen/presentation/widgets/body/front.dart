@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'front/card_banner.dart';
+import 'front/grid_view/grid_view_coffee.dart';
 import 'front/location_and_profile.dart';
 import 'front/search_bar.dart';
+import 'front/list_bar/list_bar.dart';
 
 class FrontBody extends StatefulWidget {
   const FrontBody({super.key});
@@ -12,23 +15,19 @@ class FrontBody extends StatefulWidget {
 class _FrontBodyState extends State<FrontBody> {
   @override
   Widget build(BuildContext context) {
-    return Padding(
+    return const Padding(
       padding: const EdgeInsets.all(30),
       child: Column(
         children: [
-          const LocationAndProfile(),
-          const SizedBox(height: 20),
-          const Searchbar(),
-          const SizedBox(height: 20),
-
-          //--ToDO: Add CardBanner
-          Image.asset('assets/img/CardBanner.jpg',
-              width: MediaQuery.of(context).size.width),
-          Expanded(
-            child: Container(
-              color: Colors.indigo,
-            ),
-          ),
+          LocationAndProfile(),
+          SizedBox(height: 20),
+          Searchbar(),
+          SizedBox(height: 20),
+          CardBanner(),
+          SizedBox(height: 10),
+          ListBar(),
+          SizedBox(height: 20),
+          GridViewCoffee()
         ],
       ),
     );
